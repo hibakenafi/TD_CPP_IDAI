@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <cstring>//pour  pouvoir utiliser size_t
 using namespace std;
 
 class Fichier {
@@ -47,16 +47,16 @@ public:
 
 
 int main() {
-    size_t taille = 10;  // Taille du fichier (en octets)
+    size_t taille = 9;  // Taille du fichier (en octets)
 
-    Fichier* fichier = new Fichier(taille);
+    Fichier* f1 = new Fichier(taille);
 
     // Appel des methodes
-    fichier->Remplit();
-    fichier->Affiche();
+    f1->Remplit();
+    f1->Affiche();
 
     // Suppression de l'objet par 'delete'
-    delete fichier;
+    delete f1;
 
     return 0;
 }
