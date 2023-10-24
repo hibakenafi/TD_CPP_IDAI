@@ -1,0 +1,16 @@
+1. 13 (int)
+2. 2 (int)
+3. 11 (int)
+4. 35 (int)
+
+
+// explication
+// char -> short -> int -> long -> float -> double -> long double
+
+// short <=> short int
+// short + int -> int (le plus fort)
+// char + int -> int (le plus fort)
+
+// #include <typeinfo>
+// cout << typeid(p).name();
+
